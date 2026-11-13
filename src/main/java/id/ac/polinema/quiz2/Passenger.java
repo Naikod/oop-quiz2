@@ -18,16 +18,21 @@ public class Passenger {
      * @param passengerId kode penumpang
      * @param name nama penumpang
      */
+
+    private String pessangerId;
+    private String name;
+
     public Passenger(String passengerId, String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.pessangerId = passengerId;
+        this.name = name;
     }
 
     public String getPassengerId() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return pessangerId;
     }
 
     public String getName() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
     }
 
     /**
@@ -37,6 +42,8 @@ public class Passenger {
      * @param name nama baru
      */
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (name != null && !name.trim().isEmpty()) {
+            this.name = name;
+        }
     }
 }
