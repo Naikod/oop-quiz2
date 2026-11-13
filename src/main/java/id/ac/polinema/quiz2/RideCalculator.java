@@ -47,7 +47,7 @@ public class RideCalculator {
         }
 
         for(Ride order: orders){
-            if(order instanceof CarRide){
+            if(order instanceof Insurable){
                 total+= ((Insurable) order).insuranceFee();
             }
         }
